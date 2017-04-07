@@ -50,8 +50,8 @@ app.post('/contact', function (req, res) {
 	var transporter = nodemailer.createTransport({
 		service: 'gmail',
 		auth: {
-			user: 'uriel.cisne@gmail.com',
-			pass: 'wagdadqirgljlnxk'
+			user: 'email',
+			pass: 'password'
 		},
 		tls: {
 			rejectUnauthorized: false
