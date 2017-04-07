@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const favicon = require('serve-favicon');
 const path = require('path');
@@ -50,8 +52,8 @@ app.post('/contact', function (req, res) {
 	var transporter = nodemailer.createTransport({
 		service: 'gmail',
 		auth: {
-			user: 'email',
-			pass: 'password'
+			user: process.env.NODEMAILER_USER,
+			pass: process.env.NODEMAILER_PASS
 		},
 		tls: {
 			rejectUnauthorized: false
@@ -60,7 +62,7 @@ app.post('/contact', function (req, res) {
 
 	var mailOptions = {
 		from: req.body.name + ' <' + req.body.email + '>',
-		to: 'christian@flinzmedia.com',
+		to: process.env.NODEMAILER_RECIPIENT,
 		subject: req.body.name + ' filled the form in flinzmedia.com',
 		text: req.body.message
 	};
