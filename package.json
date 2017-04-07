@@ -1,0 +1,18 @@
+{
+  "name": "flinz-media",
+  "version": "1.0.0",
+  "description": "El sitio web de Flinz Media",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Cisneros",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.14.1",
+    "nodemailer": "^4.0.0",
+    "pug": "^2.0.0-beta11",
+    "serve-favicon": "^2.4.1"
+  }
+}

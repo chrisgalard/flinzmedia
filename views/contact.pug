@@ -1,0 +1,45 @@
+extends layout.pug
+
+append general
+	title Are You An Influencer And Need a Website?
+	meta(name='description', content='Contact us now to get a free consultation and discover how we can use our creative and technical services to help you with your website.')
+
+block content
+	section.section.contact-page.cf
+		.container
+			.headline
+				h1.headline__title We Can't Wait to Know You
+				.headline__description: p
+					| If you're interested in knowing how we can use design and
+					| web technology to help you increase your impact and grow
+					| your reach, fill out the form below and we'll get back to
+					| you within 24 hours.
+			.page-content
+				form.contact-page__form.pull-left(action='/contact' method='post')
+					if (message !== undefined)
+						.form__message(class=message.type)= message.text
+					.one-half
+						label.form__label Name
+						input.form__input(type='text', name='name')
+					.one-half.last
+						label.form__label Email
+						input.form__input(type='email', name='email')
+					.form-field
+						label.form__label Message
+						textarea.form__textarea(name='message')
+					.form-field
+						input.form__submit(type='submit', value='Send Message')
+				.contact-page__extra-info.pull-right
+					.contact-info.contact-page__contact-info
+						.contact-info__item.contact-info__item--big.contact-info__email: a(href='mailto:christian@flinzmedia.com') christian@flinzmedia.com
+						.contact-info__item.contact-info__item--big.contact-info__phone: a(href='tel:+526563342600') (+52) 656-334-26-00
+					blockquote.contact-page__blockquote
+						p.quote
+							| "You can also reach me out at the email address
+							| and phone number above"
+						.quote__author
+							img.author__image(src='/images/christian-headshot.png')
+							cite.author__info
+								| Christian Cisneros
+								br
+								span.author__role Founder at #[a(href='http://flinzmedia.com', target='_blank') FlinzMedia]

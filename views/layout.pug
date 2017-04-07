@@ -1,0 +1,34 @@
+doctype
+html
+    head
+        block head
+            block general
+                meta(charset='utf-8')
+                meta(name='viewport' content='width=device-width,initial-scale=1,user-scalable=no')
+
+            block opengraph
+                meta(property='fb:app_id' content='203032750095949')
+                meta(property='og:url' content='http://flinzmedia.com')
+                meta(property='og:type' content='website')
+                meta(property='og:title' content='Flinz Media | Websites for digital influencers')
+                meta(property='og:description' content='')
+                meta(property='og:image' content='http://flinz.co/logo-color-big.png')
+            block styles
+                link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700|Merriweather:300i,400,700' rel='stylesheet')
+                link(href='css/normalize.css' rel='stylesheet')
+                link(href='css/main.css' rel='stylesheet')
+            block scripts
+                //- script.
+                //-     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                //-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                //-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                //-     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                //-     ga('create', 'UA-77902792-2', 'auto');
+                //-     ga('send', 'pageview');
+    body(class=section)
+        include ./partials/navigation.pug
+
+        block content
+        
+        include ./partials/footer.pug
