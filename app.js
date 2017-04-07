@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 3001;
 
 app.locals.pretty = true;
 app.set('view engine', 'pug');
