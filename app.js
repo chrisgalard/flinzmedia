@@ -38,6 +38,11 @@ app.get('/contact', function (req, res) {
 	res.render('contact');
 });
 
+app.get('/portfolio', function (req, res) {
+	res.locals.section = 'portfolio';
+	res.render('portfolio');
+});
+
 app.post('/contact', function (req, res) {
 	var data = req.body;
 	if (!data.name || !data.email || !data.message) {

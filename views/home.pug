@@ -1,24 +1,22 @@
 extends layout.pug
 
 append general
-	title Website design &amp; development for digital influencers | Flinz Media
-	meta(name='description', content='We create websites for bloggers, youtubers and instagrammers. Let\'s make you a website that your audience will love. Call us at +52 656-334-26-00')
+	title Website design &amp; development for smart businesses | FlinzMedia
+	meta(name='description', content='We create websites that help you improve the bottom line of your business. Call us at +52 656-334-26-00')
 
 block content
-	section.intro
-		.container
-			h1.intro-title
-				span.light-text 
-					span.intro-title__orange-text We 
-					span.intro-title__blue-text make 
-					span.intro-title__yellow-text websites 
-					span.intro-title__green-text for
-				span.intro-title__big-text.intro-title__purple-text digital influencers
+	section.intro: .container
+		h1.intro-title
+			span.light-text We Make Websites That
+			span.intro-title__big-text Make You #[span.intro-title__green-text Money💸]
+		p.intro__description
+			| Is your crappy website keeping you up at night? Do you wonder
+			| why you aren't making enough sales?... We can help with that.
 
-	section.section.foreword-section
-		.container: .headline
-			h2.headline__title.foreword-section__title The World Has Transitioned to a Completely Different Era
-			.headline__description.foreword-section__description
+	section.section.section--purple: .container
+		.headline
+			h2.headline__title.headline__title--white.headline__title--centered We Are Living In An Era Full Of Distractions
+			.headline__description.headline__description--white.headline__description--centered
 				p
 					| An era where you can spread your voice through the web and
 					| influence the life of massive amounts of people. Those who
@@ -31,14 +29,14 @@ block content
 					| and show off your work to brands interested in working with
 					| you.
 				p
-					| At Flinz Media, we strongly believe that digital influencers
+					| At FlinzMedia, we strongly believe that digital influencers
 					| across the world have started a movement that is shaping the
 					| future of our society. Let's create a website that empowers
 					| your movement.
 
-	section.section.services-section
+	section.section.section--no-bottom-space.services-section
 		.container: .headline
-			h2.headline__title Let's Use Design &amp; Technology to Empower Your Brand
+			h2.headline__title It's Time To Be Different
 			.headline__description: p
 				| With a beautiful and engaging website you'll be able to share
 				| all your information in a single place, create interactive
@@ -72,35 +70,33 @@ block content
 					| you might need. From Instagram images to Youtube
 					| thumbnails, we've got your back.
 
-	section.section.testimonials-section.cf
-		.container
-			.headline.pull-left
-				h2.headline__title Client Reviews
-				.headline__description.headline__description--shorter: p
-					| Our main goal is to help you grow your reach and increase
-					| your impact. Don't just take our word for it, see what
-					| our actual customers say about our work.
+	section.section.testimonials-section.cf: .container
+		.headline.pull-left
+			h2.headline__title Client Reviews
+			.headline__description.headline__description--shorter: p
+				| Our main goal is to help you grow your reach and increase
+				| your impact. Don't just take our word for it, see what
+				| our actual customers say about our work.
 
-			.pull-right
-				blockquote.testimonials-section__testimonial
-					p.quote
-						| "Working with Christian has been a wonderful
-						| experience. He was always on top of things and
-						| provided us tremendous value and advice on what we
-						| need to do in order to be successful online"
-					.quote__author
-						img.author__image(src='/images/dornubari.png')
-						cite.author__info
-							| Dornubari Vizor
-							br
-							span.author__role Co-Founder at #[a(href='http://leadquizzes.com', target='_blank') LeadQuizzes]
+		.pull-right
+			blockquote
+				p.quote
+					| "Working with Christian has been a wonderful
+					| experience. He was always on top of things and
+					| provided us tremendous value and advice on what we
+					| need to do in order to be successful online"
+				.quote__author
+					img.author__image(src='/images/dornubari.png')
+					cite.author__info
+						| Dornubari Vizor
+						br
+						span.author__role Co-Founder at #[a(href='http://leadquizzes.com', target='_blank') LeadQuizzes]
 
-	section.section.cta-section.cf
+	section.section.section--blue.cf
 		.container: .headline
-			h2.headline__title.cta-section__title We're Eager to Work With You
-			.headline__description.cta-section__description: p
+			h2.headline__title.headline__title--white We're Eager to Work With You
+			.headline__description.headline__description--white: p
 				| Let's have a conversation to see if we are a good fit to
 				| work together. Contact us now to discover how your brand
 				| can benefit from our creative and technical services.
-			a.cta-button(href='/contact') Contact Us
-
+			a.btn.btn--iblock.btn--white.btn--topspaced(href='/contact') Contact Us

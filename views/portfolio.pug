@@ -1,0 +1,66 @@
+extends layout.pug
+
+append general
+	title See What We Have Done For Other Influencers
+	meta(name='description', content='Let\'s show some of the websites we have created for amazing people like you.')
+
+block content
+	section.section: .container
+		.headline
+			h1.headline__title Take a Look at Our Recent Projects
+			.headline__description: p
+				| We strive to do amazing work for all of our clients. This
+				| is our opportunity to show you what we can bring to the
+				| table for your online brand.
+
+	section.section--purple.portfolio-item.cf: .container
+		.headline.portfolio-item__description
+			h2.headline__title.headline__title--white.headline__title--small VRBL
+			.headline__description.headline__description--shorter.headline__description--white.headline__description--small
+				p
+					| #[a(href='http://chriseagleton.com/', target='_blank') Christophe Eagleton] 
+					| reached to us to implement the first version of his idea.
+					| A web platform to convert articles and blogs into
+					| compelling audio.
+				p
+					| 
+				a.btn.btn--white.btn--iblock.btn--small(href='http://vrbl.io', target='_blank') See live project
+		.portfolio-item__image
+			img(src='/images/portfolio/christophe-eagleton.png')
+
+	section.portfolio-item.cf: .container
+		.portfolio-item__image.portfolio-item__image--inverse
+			img(src='/images/portfolio/bryan-casella.png')
+		.portfolio-item__description.portfolio-item__description--inverse
+			h2.headline__title.headline__title--small Bryan Casella
+			.headline__description.headline__description--shorter.headline__description--small
+				p
+					| Bryan Casella is an entrepreneur, real estate expert and
+					| youtuber who creates amazing content about business,
+					| mindset and motivation for his audience of people
+					| interested in entering the world of real estate
+					| entrepreneurship.
+				a.btn.btn--blue.btn--iblock.btn--small(href='#') See live project
+
+	section.section--blue.portfolio-item.portfolio-item--last.cf: .container
+		.portfolio-item__description
+			h2.headline__title.headline__title--white.headline__title--small Bryan Casella
+			.headline__description.headline__description--shorter.headline__description--white.headline__description--small
+				p
+					| Bryan Casella is an entrepreneur, real estate expert and
+					| youtuber who creates amazing content about business,
+					| mindset and motivation for his audience of people
+					| interested in entering the world of real estate
+					| entrepreneurship.
+				a.btn.btn--white.btn--blue.btn--iblock.btn--small(href='#') See live project
+		.portfolio-item__image
+			img(src='/images/portfolio/bryan-casella.png')
+
+	section.section.cta-section.cf
+		.container: .headline
+			h2.headline__title.cta-section__title We're Eager to Work With You
+			.headline__description.cta-section__description: p
+				| Let's have a conversation to see if we are a good fit to
+				| work together. Contact us now to discover how your brand
+				| can benefit from our creative and technical services.
+			a.btn.btn--blue.btn--iblock(href='/contact') Contact Us
